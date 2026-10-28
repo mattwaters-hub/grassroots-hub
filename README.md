@@ -38,3 +38,7 @@ Independent prototype, not an official club, league or Mitoo service. Text badge
 ## Mobile checks before release
 
 Open in Safari on a physical iPhone. Test navigation, keyboard search, team and month selectors, follow/unfollow across reload, dialog close and Escape where available, share sheet, .ics import, sideways standings scroll, and Home Screen launch. Viewport checks on a desktop browser do not constitute physical iPhone/Safari verification.
+
+## Coach workspace preview
+
+Open `#coaches` from the Coaches navigation item. PBU home kick-off drafts support validation, review and local persistence with blocked-storage fallback. The 8 November Knebworth form link is taken from the supplied Mitoo screenshot (FID 10690, home side). No sign-in, Mitoo write operation, confirmation of submission or public-fixture modification is implemented. Team-sheet star means Man of the Match; team sheets are not implemented yet.
