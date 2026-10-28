@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#12392c">
+  <meta name="description" content="Your local game, in one place. Follow grassroots teams, fixtures, results and league tables. Mid Herts U12 Division 6 prototype.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Grassroots Hub">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./data.js"></script>
+  <script defer src="./app.js"></script>
+  <title>Grassroots Hub · Your local game</title>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="Grassroots Hub home"><span class="brand-icon" aria-hidden="true">G<span>↗</span></span><span>grassroots<span class="brand-light">hub</span></span></a>
+  <nav aria-label="Main navigation">
+    <a href="#home" data-nav="home"><span aria-hidden="true">⌂</span> Home</a>
+    <a href="#matches" data-nav="matches"><span aria-hidden="true">▦</span> Matches</a>
+    <a href="#table" data-nav="table"><span aria-hidden="true">≡</span> Table</a>
+    <a href="#teams" data-nav="teams"><span aria-hidden="true">☆</span> Teams</a>
+    <a href="#about" data-nav="about"><span aria-hidden="true">ⓘ</span> About</a>
+  </nav>
+  <span class="header-tag">THE LOCAL GAME. TOGETHER.</span>
+</header>
+<main id="main" tabindex="-1"></main>
+<footer><a class="footer-brand" href="#home">grassroots hub</a><p>Made for the people behind the touchline.</p><p>Independent prototype · Mid Herts U12 Division 6 · 2026/27</p><a href="#about">Data, privacy & help</a></footer>
+<dialog id="match-dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div><form method="dialog"><button class="button secondary close-dialog">Close match details</button></form></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript><p class="notice">JavaScript is needed for search and navigation. <a href="https://mitoofootball.com/FixtResMonth.cfm?TblName=Matches&amp;DivisionID=616&amp;LeagueCode=MHRML2026&amp;MonthNo=10">Open official fixtures on Mitoo</a>.</p></noscript>
+</body>
+</html>

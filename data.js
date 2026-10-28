@@ -1,0 +1,58 @@
+/* Public team-level facts transcribed from Mitoo on 28 October 2026.
+   This is a static snapshot, not an automatic feed. No player data included. */
+'use strict';
+window.HUB_DATA = {
+  checked: '28 October 2026', season: '2026/27', league: 'Mid Herts League', division: 'Under 12 · Division 6',
+  source: 'https://mitoofootball.com/FixtResMonth.cfm?TblName=Matches&DivisionID=616&LeagueCode=MHRML2026&MonthNo=',
+  tableSource: 'https://mitoofootball.com/LeagueTab.cfm?TblName=Matches&DivisionID=616&LeagueCode=MHRML2026',
+  teams: [
+    ['pbu','Potters Bar United U12 Lions','PBU',5753,6,5,1,0,37,8,16],
+    ['sk','SK Sports U12 Bears','SK',5755,6,4,0,2,27,8,12],
+    ['chars',"Char's Youth U12 Greens",'CY',5749,5,4,0,1,23,9,12],
+    ['blues','BSC FC U12 Blues','BSC',5747,4,3,1,0,18,7,10],
+    ['stevenage','Stevenage Borough U12 Racing','SB',5756,6,2,1,3,15,19,7],
+    ['haynes','Haynes Harriers U12 Whites','HH',5750,6,2,1,3,13,20,7],
+    ['bengeo','Bengeo Tigers U12 Javans','BT',5745,4,1,0,3,7,14,3],
+    ['bury','Bury Rangers U12 Greens','BR',5748,4,1,0,3,6,18,3],
+    ['welwyn','Welwyn Pegasus U12 Navys','WP',5757,4,1,0,3,10,28,3],
+    ['risden','Risden Wood U12 Warriors','RW',5754,6,1,0,5,11,35,3],
+    ['fairlands','Fairlands Youth U12 Yellows','FY',8297,0,0,0,0,0,0,0],
+    ['knebworth','Knebworth Youth U12 Lions','KY',8298,0,0,0,0,0,0,0],
+    ['rangers','BSC FC U12 Rangers','BSC',8296,1,0,0,1,1,2,0]
+  ].map(([id,name,short,ci,p,w,d,l,gf,ga,pts])=>({id,name,short,ci,p,w,d,l,gf,ga,pts})),
+  matches: [
+    ['2026-10-04','bengeo','haynes',0,2,'12:30','Fixture reversed to Haynes; kick-off changed on 1 October. Confirm venue with the club.'],
+    ['2026-10-04','pbu','welwyn',11,0,'11:00'],
+    ['2026-10-04','risden','chars',1,8,'12:00'],
+    ['2026-10-04','sk','stevenage',2,3,'10:05'],
+    ['2026-10-11','bury','bengeo',3,1,'14:00'],
+    ['2026-10-11','chars','sk',3,2,'10:00'],
+    ['2026-10-11','haynes','risden',6,0,'12:00'],
+    ['2026-10-11','stevenage','pbu',2,4,'11:30'],
+    ['2026-10-18','haynes','sk',1,3,'10:45'],
+    ['2026-10-18','pbu','blues',2,2,'11:00'],
+    ['2026-10-18','risden','bengeo',0,4,'12:00'],
+    ['2026-10-18','stevenage','chars',2,4,'11:30'],
+    ['2026-10-25','blues','stevenage',8,2,'10:00'],
+    ['2026-10-25','chars','haynes',7,1,'10:00'],
+    ['2026-10-25','pbu','rangers',2,1,null,'Fixture added 19 October.'],
+    ['2026-11-01','bury','risden',null,null,'10:00'],
+    ['2026-11-01','chars','blues',null,null,'10:00'],
+    ['2026-11-01','fairlands','rangers',null,null,'10:00','Mitoo displays 10:00 but also notes no kick-off time published at the deadline. Confirm with the club.'],
+    ['2026-11-01','sk','pbu',null,null,'10:05'],
+    ['2026-11-01','stevenage','knebworth',null,null,'11:30'],
+    ['2026-11-01','welwyn','haynes',null,null,'12:00'],
+    ['2026-11-08','bengeo','sk',null,null,'10:00'],
+    ['2026-11-08','blues','fairlands',null,null,null],
+    ['2026-11-08','rangers','chars',null,null,null],
+    ['2026-11-08','haynes','bury',null,null,null],
+    ['2026-11-08','pbu','knebworth',null,null,'11:00'],
+    ['2026-11-08','risden','welwyn',null,null,null],
+    ['2026-11-15','blues','pbu',null,null,null],
+    ['2026-11-15','rangers','risden',null,null,null],
+    ['2026-11-15','bury','welwyn',null,null,null],
+    ['2026-11-15','fairlands','chars',null,null,null],
+    ['2026-11-15','knebworth','bengeo',null,null,null],
+    ['2026-11-15','stevenage','sk',null,null,null]
+  ].map(([date,home,away,hs,as,time,note],i)=>({id:String(i+1),date,home,away,hs,as,time,note:note||''}))
+};
